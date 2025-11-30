@@ -43,6 +43,7 @@ export default function AuthForm() {
         if (error) setMessage(error.message)
         else {
             setMessage('Logged in successfully!')
+            router.push('/dashboard')
             router.refresh()
         }
         setLoading(false)
@@ -96,6 +97,7 @@ export default function AuthForm() {
             setMessage(error.message)
         } else {
             setMessage('Email verified! Logging you in...')
+            router.push('/dashboard')
             router.refresh()
         }
         setLoading(false)
