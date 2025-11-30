@@ -7,7 +7,11 @@ import { Input } from '@/components/ui/input'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { useRouter } from 'next/navigation'
 
-export default function AuthForm() {
+interface AuthFormProps {
+    redirectTo?: string
+}
+
+export default function AuthForm({ redirectTo = '/dashboard' }: AuthFormProps) {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [otp, setOtp] = useState('')
@@ -43,7 +47,7 @@ export default function AuthForm() {
         if (error) setMessage(error.message)
         else {
             setMessage('Logged in successfully!')
-            router.push('/dashboard')
+            router.push(redirectTo)
             router.refresh()
         }
         setLoading(false)
@@ -97,7 +101,7 @@ export default function AuthForm() {
             setMessage(error.message)
         } else {
             setMessage('Email verified! Logging you in...')
-            router.push('/dashboard')
+            router.push(redirectTo)
             router.refresh()
         }
         setLoading(false)
