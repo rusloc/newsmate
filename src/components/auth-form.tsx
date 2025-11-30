@@ -28,15 +28,20 @@ export default function AuthForm({ redirectTo = '/dashboard' }: AuthFormProps) {
         console.error(e)
     }
 
+    const captureBrowserInfo = () => {
+        return {
+            screen_width: window.screen.width,
+            screen_height: window.screen.height,
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+            language: navigator.language,
+            platform: navigator.platform,
+            userAgent: navigator.userAgent,
+        }
+    }
+
     const logLogin = async () => {
         try {
-            const metadata = {
-                screen_width: window.screen.width,
-                screen_height: window.screen.height,
-                timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-                language: navigator.language,
-                platform: navigator.platform,
-            }
+            const metadata = captureBrowserInfo()
 
             await fetch('/api/log-login', {
                 method: 'POST',
@@ -52,7 +57,6 @@ export default function AuthForm({ redirectTo = '/dashboard' }: AuthFormProps) {
             console.error('Failed to log login:', error)
         }
     }
-
 
     const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault()

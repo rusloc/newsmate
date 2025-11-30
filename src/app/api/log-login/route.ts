@@ -33,6 +33,30 @@ export async function POST(request: Request) {
     const body = await request.json()
     const { event_type, metadata } = body
 
+    // Validation
+    const isValidString = (str: any, maxLength: number = 50) => {
+        if (typeof str !== 'string') return false
+        // Basic check for control characters or excessive length
+        // SQL injection is handled by Supabase client, but we can filter weird stuff
+        if (str.length > maxLength) return false
+        if (/[\x00-\x1F\x7F]/.test(str)) return false // Control characters
+        return true
+    }
+
+    if (event_type && !isValidString(event_type)) {
+        return NextResponse.json({ error: 'Invalid event_type' }, { status: 400 })
+    }
+
+    if (metadata) {
+        if (typeof metadata !== 'object' || Array.isArray(metadata)) {
+            return NextResponse.json({ error: 'Invalid metadata format' }, { status: 400 })
+        }
+        // Check metadata size roughly
+        if (JSON.stringify(metadata).length > 5000) {
+            return NextResponse.json({ error: 'Metadata too large' }, { status: 400 })
+        }
+    }
+
     // Extract IP and User Agent
     const ip = request.headers.get('x-forwarded-for') || 'unknown'
     const userAgent = request.headers.get('user-agent') || 'unknown'
