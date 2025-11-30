@@ -11,10 +11,25 @@ export default function AuthForm() {
     const [password, setPassword] = useState('')
     const [loading, setLoading] = useState(false)
     const [message, setMessage] = useState<string | null>(null)
-    const supabase = createClient()
+
+    // Safely initialize client
+    let supabase: ReturnType<typeof createClient> | null = null
+    try {
+        supabase = createClient()
+    } catch (e) {
+        console.error(e)
+    }
 
     const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault()
+        if (!supabase) {
+            setMessage('Supabase not configured. Check console.')
+            return
+        }
+        if (!email || !password) {
+            setMessage('Please enter both email and password.')
+            return
+        }
         setLoading(true)
         setMessage(null)
         const { error } = await supabase.auth.signInWithPassword({
@@ -28,6 +43,14 @@ export default function AuthForm() {
 
     const handleSignUp = async (e: React.FormEvent) => {
         e.preventDefault()
+        if (!supabase) {
+            setMessage('Supabase not configured. Check console.')
+            return
+        }
+        if (!email || !password) {
+            setMessage('Please enter both email and password.')
+            return
+        }
         setLoading(true)
         setMessage(null)
         const { error } = await supabase.auth.signUp({
@@ -43,12 +66,21 @@ export default function AuthForm() {
     }
 
     const handleGoogleLogin = async () => {
-        await supabase.auth.signInWithOAuth({
-            provider: 'google',
-            options: {
-                redirectTo: `${location.origin}/auth/callback`,
-            },
-        })
+        if (!supabase) {
+            setMessage('Supabase not configured.')
+            return
+        }
+        try {
+            const { error } = await supabase.auth.signInWithOAuth({
+                provider: 'google',
+                options: {
+                    redirectTo: `${location.origin}/auth/callback`,
+                },
+            })
+            if (error) setMessage(error.message)
+        } catch (error: any) {
+            setMessage(error.message || 'An error occurred')
+        }
     }
 
     return (
@@ -58,7 +90,7 @@ export default function AuthForm() {
                 <CardDescription>Login or create an account to get started.</CardDescription>
             </CardHeader>
             <CardContent>
-                <form className="space-y-4">
+                <form className="space-y-4" onSubmit={handleLogin}>
                     <div className="space-y-2">
                         <Input
                             type="email"
@@ -74,10 +106,10 @@ export default function AuthForm() {
                         />
                     </div>
                     <div className="flex flex-col space-y-2">
-                        <Button onClick={handleLogin} disabled={loading}>
+                        <Button type="submit" disabled={loading}>
                             {loading ? 'Loading...' : 'Sign In'}
                         </Button>
-                        <Button variant="outline" onClick={handleSignUp} disabled={loading}>
+                        <Button variant="outline" type="button" onClick={handleSignUp} disabled={loading}>
                             Sign Up
                         </Button>
                     </div>
