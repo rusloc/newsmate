@@ -28,6 +28,32 @@ export default function AuthForm({ redirectTo = '/dashboard' }: AuthFormProps) {
         console.error(e)
     }
 
+    const logLogin = async () => {
+        try {
+            const metadata = {
+                screen_width: window.screen.width,
+                screen_height: window.screen.height,
+                timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+                language: navigator.language,
+                platform: navigator.platform,
+            }
+
+            await fetch('/api/log-login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    event_type: 'login',
+                    metadata,
+                }),
+            })
+        } catch (error) {
+            console.error('Failed to log login:', error)
+        }
+    }
+
+
     const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault()
         if (!supabase) {
@@ -47,6 +73,7 @@ export default function AuthForm({ redirectTo = '/dashboard' }: AuthFormProps) {
         if (error) setMessage(error.message)
         else {
             setMessage('Logged in successfully!')
+            await logLogin()
             router.push(redirectTo)
             router.refresh()
         }
@@ -101,6 +128,7 @@ export default function AuthForm({ redirectTo = '/dashboard' }: AuthFormProps) {
             setMessage(error.message)
         } else {
             setMessage('Email verified! Logging you in...')
+            await logLogin()
             router.push(redirectTo)
             router.refresh()
         }
