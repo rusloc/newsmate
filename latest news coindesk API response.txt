@@ -1,0 +1,707 @@
+{
+    "Data": [
+        {
+            "TYPE": "121",
+            "ID": 55475354,
+            "GUID": "https://ambcrypto.com/?p=551768",
+            "PUBLISHED_ON": 1765134010,
+            "PUBLISHED_ON_NS": null,
+            "IMAGE_URL": "https://images.cryptocompare.com/news/default/ambcrypto.png",
+            "TITLE": "Crypto market’s weekly winners and losers – MYX, LINK, CC, ZEC",
+            "SUBTITLE": null,
+            "AUTHORS": "Ritika Gupta",
+            "URL": "https://ambcrypto.com/crypto-markets-weekly-winners-and-losers-myx-link-cc-zec/",
+            "SOURCE_ID": 32,
+            "BODY": "This week, high-caps fell below key levels. Here’s a look at how some of your favorite coins fared.",
+            "KEYWORDS": "News|News 1|Social|Trading View|ambcrypto",
+            "LANG": "EN",
+            "UPVOTES": 0,
+            "DOWNVOTES": 0,
+            "SCORE": 0,
+            "SENTIMENT": "NEUTRAL",
+            "STATUS": "ACTIVE",
+            "CREATED_ON": 1765134075,
+            "UPDATED_ON": null,
+            "SOURCE_DATA": {
+                "TYPE": "120",
+                "ID": 32,
+                "SOURCE_KEY": "ambcrypto",
+                "NAME": "AMB Crypto",
+                "IMAGE_URL": "https://images.cryptocompare.com/news/default/ambcrypto.png",
+                "URL": "https://ambcrypto.com/feed/",
+                "LANG": "EN",
+                "SOURCE_TYPE": "RSS",
+                "LAUNCH_DATE": null,
+                "SORT_ORDER": 0,
+                "BENCHMARK_SCORE": 0,
+                "STATUS": "ACTIVE",
+                "LAST_UPDATED_TS": 1765133064,
+                "CREATED_ON": 1657730129,
+                "UPDATED_ON": 1674467937
+            },
+            "CATEGORY_DATA": [
+                {
+                    "TYPE": "122",
+                    "ID": 31,
+                    "NAME": "LINK",
+                    "CATEGORY": "LINK"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 37,
+                    "NAME": "MARKET",
+                    "CATEGORY": "MARKET"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 61,
+                    "NAME": "ZEC",
+                    "CATEGORY": "ZEC"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 211,
+                    "NAME": "CRYPTOCURRENCY",
+                    "CATEGORY": "CRYPTOCURRENCY"
+                }
+            ]
+        },
+        {
+            "TYPE": "121",
+            "ID": 37266685,
+            "GUID": "https://decrypt.co/?p=294514",
+            "PUBLISHED_ON": 1765133899,
+            "PUBLISHED_ON_NS": null,
+            "IMAGE_URL": "https://resources.cryptocompare.com/news/44/37266685.jpeg",
+            "TITLE": "Getting Started With Myriad",
+            "SUBTITLE": null,
+            "AUTHORS": "Decrypt Staff",
+            "URL": "https://decrypt.co/resources/getting-started-with-myriad",
+            "SOURCE_ID": 44,
+            "BODY": "Myriad's prediction market ecosystem enables you to make predictions using USDC. Here’s how to get set up and start using it.",
+            "KEYWORDS": "The Projects",
+            "LANG": "EN",
+            "UPVOTES": 0,
+            "DOWNVOTES": 0,
+            "SCORE": 0,
+            "SENTIMENT": "NEUTRAL",
+            "STATUS": "ACTIVE",
+            "CREATED_ON": 1733438921,
+            "UPDATED_ON": 1765133973,
+            "SOURCE_DATA": {
+                "TYPE": "120",
+                "ID": 44,
+                "SOURCE_KEY": "decrypt",
+                "NAME": "Decrypt",
+                "IMAGE_URL": "https://images.cryptocompare.com/news/default/decrypt.png",
+                "URL": "https://decrypt.co/feed",
+                "LANG": "EN",
+                "SOURCE_TYPE": "RSS",
+                "LAUNCH_DATE": 1521331200,
+                "SORT_ORDER": 0,
+                "BENCHMARK_SCORE": 57,
+                "STATUS": "ACTIVE",
+                "LAST_UPDATED_TS": 1765133056,
+                "CREATED_ON": 1657730129,
+                "UPDATED_ON": 1711620560
+            },
+            "CATEGORY_DATA": [
+                {
+                    "TYPE": "122",
+                    "ID": 37,
+                    "NAME": "MARKET",
+                    "CATEGORY": "MARKET"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 100,
+                    "NAME": "USDC",
+                    "CATEGORY": "USDC"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 211,
+                    "NAME": "CRYPTOCURRENCY",
+                    "CATEGORY": "CRYPTOCURRENCY"
+                }
+            ]
+        },
+        {
+            "TYPE": "121",
+            "ID": 55474993,
+            "GUID": "https://en.bitcoinsistemi.com/these-should-definitely-be-watched-in-altcoins-in-the-new-week/",
+            "PUBLISHED_ON": 1765133290,
+            "PUBLISHED_ON_NS": null,
+            "IMAGE_URL": "https://resources.cryptocompare.com/news/81/default.png",
+            "TITLE": "These Should Definitely Be Watched in Altcoins in the New Week",
+            "SUBTITLE": null,
+            "AUTHORS": "Mete Demiralp",
+            "URL": "https://en.bitcoinsistemi.com/these-should-definitely-be-watched-in-altcoins-in-the-new-week/",
+            "SOURCE_ID": 81,
+            "BODY": "Cryptocurrency analyst The DeFi Investor has shared his altcoin watchlist, which includes critical market developments for the upcoming week. The week, filled with both macroeconomic and project-based important dates, promises a wide range of activity, from Bitcoin to Solana, from memecoin launches to ETF approval processes. According to the analyst's assessment, December 10-12 could be a decisive turning point for many altcoins. Here are the prominent altcoin headlines of the new week: Breakpoint Conference, the biggest event of the year for Solana (SOL), will kick off on December 11th. On the Bitcoin (BTC) side, the FED interest rate decision to be announced on December 10 will be the main driver of the markets. A new representative is preparing to emerge in the memecoin market: The Lighter team is expected to release a new memecoin soon. December 10th is an important date for Aster (ASTER) investors. The project will launch its highly anticipated S4 buyback program on this date. A critical turning point for the LUNA ecosystem is Do Kwon's sentencing hearing, which will take place on December 11th. The DeFi Agent Platform called Almanak (ALMANAK) will hold its token launch on December 11. The first halving event for Bittensor (TAO) will take place on December 12th. Next week, the Extended platform will launch a new feature that will allow perpetual trades to be opened using vault shares as collateral. The stable project will release the mainnet of the structure it developed as a stablecoin-focused Layer-1 network on December 8. For Avalanche (AVAX), another critical date in the ETF approval process in the US is December 12. A new assessment is expected on this date. *This is not investment advice. Continue Reading: These Should Definitely Be Watched in Altcoins in the New Week",
+            "KEYWORDS": "News",
+            "LANG": "EN",
+            "UPVOTES": 0,
+            "DOWNVOTES": 0,
+            "SCORE": 0,
+            "SENTIMENT": "POSITIVE",
+            "STATUS": "ACTIVE",
+            "CREATED_ON": 1765133294,
+            "UPDATED_ON": null,
+            "SOURCE_DATA": {
+                "TYPE": "120",
+                "ID": 81,
+                "SOURCE_KEY": "bitcoinsistemi",
+                "NAME": "BitcoinSistemi",
+                "IMAGE_URL": "https://resources.cryptocompare.com/news/81/default.png",
+                "URL": "https://en.bitcoinsistemi.com/feed/",
+                "LANG": "EN",
+                "SOURCE_TYPE": "RSS",
+                "LAUNCH_DATE": null,
+                "SORT_ORDER": 0,
+                "BENCHMARK_SCORE": 0,
+                "STATUS": "ACTIVE",
+                "LAST_UPDATED_TS": 1765133087,
+                "CREATED_ON": 1692873798,
+                "UPDATED_ON": 1764762589
+            },
+            "CATEGORY_DATA": [
+                {
+                    "TYPE": "122",
+                    "ID": 5,
+                    "NAME": "ALTCOIN",
+                    "CATEGORY": "ALTCOIN"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 14,
+                    "NAME": "BTC",
+                    "CATEGORY": "BTC"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 37,
+                    "NAME": "MARKET",
+                    "CATEGORY": "MARKET"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 46,
+                    "NAME": "SOL",
+                    "CATEGORY": "SOL"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 211,
+                    "NAME": "CRYPTOCURRENCY",
+                    "CATEGORY": "CRYPTOCURRENCY"
+                }
+            ]
+        },
+        {
+            "TYPE": "121",
+            "ID": 55475111,
+            "GUID": "https://en.coinotag.com/xrps-potential-surge-above-15-amid-technical-patterns-and-regulatory-clarity",
+            "PUBLISHED_ON": 1765132925,
+            "PUBLISHED_ON_NS": null,
+            "IMAGE_URL": "https://resources.cryptocompare.com/news/77/55475111.jpeg",
+            "TITLE": "XRP’s Potential Surge Above $15 Amid Technical Patterns and Regulatory Clarity",
+            "SUBTITLE": null,
+            "AUTHORS": "COINOTAG Editorial Team",
+            "URL": "https://en.coinotag.com/xrps-potential-surge-above-15-amid-technical-patterns-and-regulatory-clarity",
+            "SOURCE_ID": 77,
+            "BODY": "XRP is poised for a potential surge above $15 in the coming years, driven by historical technical patterns mirroring 2017 breakouts, spiking on-chain velocity in 2025, and emerging U.S. regulatory clarity that could classify it as a commodity, boosting investor confidence and institutional inflows. XRP technical patterns suggest a 600%+ gain, targeting $15 or higher [...]",
+            "KEYWORDS": "Analysis|News",
+            "LANG": "EN",
+            "UPVOTES": 0,
+            "DOWNVOTES": 0,
+            "SCORE": 0,
+            "SENTIMENT": "POSITIVE",
+            "STATUS": "ACTIVE",
+            "CREATED_ON": 1765133570,
+            "UPDATED_ON": 1765133571,
+            "SOURCE_DATA": {
+                "TYPE": "120",
+                "ID": 77,
+                "SOURCE_KEY": "coinotag",
+                "NAME": "CoinOtag",
+                "IMAGE_URL": "https://resources.cryptocompare.com/news/77/default.png",
+                "URL": "https://en.coinotag.com/feed/",
+                "LANG": "EN",
+                "SOURCE_TYPE": "RSS",
+                "LAUNCH_DATE": null,
+                "SORT_ORDER": 0,
+                "BENCHMARK_SCORE": 0,
+                "STATUS": "ACTIVE",
+                "LAST_UPDATED_TS": 1765133091,
+                "CREATED_ON": 1686819961,
+                "UPDATED_ON": 1717748924
+            },
+            "CATEGORY_DATA": [
+                {
+                    "TYPE": "122",
+                    "ID": 15,
+                    "NAME": "BUSINESS",
+                    "CATEGORY": "BUSINESS"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 37,
+                    "NAME": "MARKET",
+                    "CATEGORY": "MARKET"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 50,
+                    "NAME": "TRADING",
+                    "CATEGORY": "TRADING"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 58,
+                    "NAME": "XRP",
+                    "CATEGORY": "XRP"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 211,
+                    "NAME": "CRYPTOCURRENCY",
+                    "CATEGORY": "CRYPTOCURRENCY"
+                }
+            ]
+        },
+        {
+            "TYPE": "121",
+            "ID": 55474690,
+            "GUID": "https://www.cryptopolitan.com/?p=874206",
+            "PUBLISHED_ON": 1765132200,
+            "PUBLISHED_ON_NS": null,
+            "IMAGE_URL": "https://resources.cryptocompare.com/news/43/55474690.jpeg",
+            "TITLE": "Bitcoin Price Prediction: What’s Ahead for the Leading Crypto in December as Mutuum Finance (MUTM) Explodes",
+            "SUBTITLE": null,
+            "AUTHORS": "Cryptopolitan Media",
+            "URL": "https://www.cryptopolitan.com/whats-ahead-for-the-leading-crypto-in-december-as-mutuum-finance-mutm-explodes/",
+            "SOURCE_ID": 43,
+            "BODY": "As December starts, Bitcoin is still at the forefront of investors’ attention as traders monitor whether the current period of consolidation will evolve into another breakout or corrective level towards the end of the year. Volatility measures are narrowing down on leading markets, and investment inflows for leading ETFs are fluctuating, keeping investors’ nerves in line with the current state of the world at large as BTC finds itself at the crossroads of the final month of the year. However, the current wave of investment appetite for much of the markets may just be moving towards MUTM due to its rapid growth in its presale, making it a new crypto coin and the next crypto to explode in the eyes of early investors. Priced at only $0.035, MUTM has been able to attract well over 18,330 investors and generate $19.15 million in funding, propelling phase 6 of its presale towards completion at an unprecedented rate. However, in addition to the overwhelming numbers that speak to its potential, it is the genuine DeFi use case of this project that sets it apart: it is purely and simply based on a decentralized lending and borrowing platform that promises to create interest-bearing tokens and yield in an unprecedented manner. Now on the horizon comes the much-anticipated V1 Sepolia Testnet launch for Mutuum Finance as it positions itself as the next crypto to explode. Bitcoin Braces for Sharp Reversal as Analysts Ponder December Downside Risks The week-long gain of Bitcoin (BTC) in the markets has been wiped out in just one savage movement, falling beneath $87,000, leading to more than $400 million in liquidations in just one hour due to low liquidity and extreme leverage. Trade volume increased to $110 billion, indicating just how extreme this movement has been, and at current levels near $86,300, attention is immediately focused on the vital level of $87,000. Some analysts are sounding warnings that a breakdown beneath $80,000 may well lead to further devastation, yet some of this action can be seen as part of the rotation of digital risk assets into hard money as interest in commodities such as silver escalates. In this situation, investors looking at what might develop in December are simultaneously taking an early look at some of the more promising cryptos that hold better asymmetry, including Mutuum Finance (MUTM), a new crypto coin widely considered the next crypto to explode. MUTM Phase 6 Presale is Nearing Completion Due to Overwhelming Demand The Mutuum Finance (MUTM) presale remains on an upward trend as it approaches the final portion of Phase 6. Structured in such a way that it contains tiered pricing and hard caps on each sale, this presale has remained committed to rewarding those that invest earlier and at lower rates. Starting off at an investment level of $0.01 in Phase 1, MUTM has increased in cost to $0.035 in Phase 6, marking a 250% jump. Thus far, it has raised about $19.15 million, and this has been facilitated by the ever-increasing community of more than 18,330 holders. Because 95% of phase 6 has been sold, and given that the supply level is very low, this is among the last chance investors have to get MUTM tokens prior to the cost rising in phase 7 to $0.04 due to the 20% increase in price. Another factor that makes MUTM one of the leading crypto investments of 2025 is the rapid progression of the presale. Strategic Advantage and Strong Security for Early Investors Early contributors on the Mutuum Finance presale gain access to tokens at substantially discounted rates, preparing them for potentially lucrative returns of up to 300% on day one of launch. In addition to this opportunistic advantage, early contributors can draw on the potential for developmental growth in the project. Mutuum Finance draws in its early supporters due to its advanced dual lending mechanism, its stablecoin-based vision for the long-term, its fully audit-trail-worthy and open-source smart contracts, and token economics that promote MUTM token appreciation. All of this makes MUTM an extremely promising entrant in the DeFi market, recognized as the new crypto coin and considered the next crypto to explode in the market. Risk Management is integrated directly within the protocol. Loan-to-Value ratios and liquidation levels are graded based on the volatility of the underlying collateral. Collaterals that are less volatile have higher borrowing ratios, while those that are riskier have stricter borrowing conditions. Another layer of stability comes in the form of multipliers for reserves that range between 10% for less risky products and 35% for higher-risk products. Mutuum Finance (MUTM) boasts over 18,330 investors and has raised around $19.15M in funding, as it is nearing completion of phase 6. The token sale price is at $0.035, which is lower than the launch price of $0.06. Mutuum Finance boasts its DeFi ecosystem and is soon launching the testnet of its V1 Sepolia, solidifying its reputation as the new crypto coin and the next crypto to explode in 2025. For more information about Mutuum Finance (MUTM) visit the links below: Website: https://mutuum.com/ Linktree: https://linktr.ee/mutuumfinance",
+            "KEYWORDS": "Press Release",
+            "LANG": "EN",
+            "UPVOTES": 0,
+            "DOWNVOTES": 0,
+            "SCORE": 0,
+            "SENTIMENT": "NEUTRAL",
+            "STATUS": "ACTIVE",
+            "CREATED_ON": 1765132647,
+            "UPDATED_ON": 1765132647,
+            "SOURCE_DATA": {
+                "TYPE": "120",
+                "ID": 43,
+                "SOURCE_KEY": "cryptopolitan",
+                "NAME": "Cryptopolitan",
+                "IMAGE_URL": "https://images.cryptocompare.com/news/default/cryptopolitan.png",
+                "URL": "https://www.cryptopolitan.com/feed/",
+                "LANG": "EN",
+                "SOURCE_TYPE": "RSS",
+                "LAUNCH_DATE": null,
+                "SORT_ORDER": 0,
+                "BENCHMARK_SCORE": 0,
+                "STATUS": "ACTIVE",
+                "LAST_UPDATED_TS": 1765133074,
+                "CREATED_ON": 1657730129,
+                "UPDATED_ON": 1681205909
+            },
+            "CATEGORY_DATA": [
+                {
+                    "TYPE": "122",
+                    "ID": 14,
+                    "NAME": "BTC",
+                    "CATEGORY": "BTC"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 15,
+                    "NAME": "BUSINESS",
+                    "CATEGORY": "BUSINESS"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 37,
+                    "NAME": "MARKET",
+                    "CATEGORY": "MARKET"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 50,
+                    "NAME": "TRADING",
+                    "CATEGORY": "TRADING"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 211,
+                    "NAME": "CRYPTOCURRENCY",
+                    "CATEGORY": "CRYPTOCURRENCY"
+                }
+            ]
+        },
+        {
+            "TYPE": "121",
+            "ID": 55474462,
+            "GUID": "https://cryptopotato.com/?p=1422164",
+            "PUBLISHED_ON": 1765132100,
+            "PUBLISHED_ON_NS": null,
+            "IMAGE_URL": "https://resources.cryptocompare.com/news/27/55474462.jpeg",
+            "TITLE": "Bitcoin Attracts Record $732 Billion in New Capital, Surpassing All Previous Cycles Combined: Report",
+            "SUBTITLE": null,
+            "AUTHORS": "Wayne Jones",
+            "URL": "https://cryptopotato.com/bitcoin-attracts-record-732-billion-in-new-capital-surpassing-all-previous-cycles-combined-report/",
+            "SOURCE_ID": 27,
+            "BODY": "Bitcoin has attracted a record $732B in new capital during the 2022–2025 cycle, surpassing the total inflows of all previous ones combined. This accumulation phase has also pushed Bitcoin’s Realized Cap to a historic all-time high while the market trades calmer, larger, and more institutional. Capital Inflows and Realized Cap Glassnode’s Q4 Digital Assets Report with FasanaraDigital shows that cumulative capital inflows in the 2022–2025 cycle reached $732B. Previous timelines experienced an influx of $4.4B from 2011–2015, $86B over 2015–2018, and $388B during 2018–2022. Data reveals that monthly net inflows during the current session have ranged from $30B to $100B, with the most recent upswing in October 2025 bringing approximately $39.8B per month into the network. Since then, these movements have cooled to around $15B per month. The report notes that this influx comes from stablecoin liquidity, spot ETF demand, and tokenized asset rails, which have changed how money gets into the ecosystem. On the other hand, the leading cryptocurrency also achieved another milestone this year with its Realized Cap reaching $1.1T. Unlike market capitalization, which assesses all coins at the most recent market price, the metric tracks cumulative net capital inflows and outflows, valuing each coin at its last on-chain transaction. During the 2022–2025 period, Bitcoin’s price also climbed from $16K to $126K, representing an increase of 690%. Market Dominance and Volatility Since November 2022, Bitcoin’s dominance has increased from 38.7% to 58.3%. Glassnode attributes this to a shift toward higher-liquidity and lower-risk assets. Meanwhile, Ethereum’s market share has declined to 12.1%, continuing its multi-year trend of underperformance relative to Bitcoin following the 2022 Merge. The broader Altcoin sector now represents 21.3% of the total market due to subdued retail participation and limited speculative capital compared with previous cycles. Additionally, Stablecoins account for 8.3% of the total market, slightly higher than last year but below their 17.3% peak in late 2022. The report highlights that these assets remain the primary quote currency on centralized and decentralized exchanges. Further, their rising adoption in emerging markets contributes to liquidity and supports dollar-denominated trade. The data also reveals a decrease in Bitcoin’s long-term volatility, with the figure dropping from 84% to 43%. The digital asset’s realized volatility has also recorded a structural decline as market depth expanded. Meanwhile, short-term fluctuation measures over one-month and three-month periods have swung between 17% and 75%. Despite being lower than in previous Bitcoin cycles, Glassnode reports that these levels remain above typical equity and commodity benchmarks, indicating that the market continues to respond to liquidity shifts and changes in sentiment. The post Bitcoin Attracts Record $732 Billion in New Capital, Surpassing All Previous Cycles Combined: Report appeared first on CryptoPotato .",
+            "KEYWORDS": "AA News|Crypto News|Bitcoin|Bitcoin (BTC) Price|Bitcoin Dominance",
+            "LANG": "EN",
+            "UPVOTES": 0,
+            "DOWNVOTES": 0,
+            "SCORE": 0,
+            "SENTIMENT": "POSITIVE",
+            "STATUS": "ACTIVE",
+            "CREATED_ON": 1765132220,
+            "UPDATED_ON": 1765132220,
+            "SOURCE_DATA": {
+                "TYPE": "120",
+                "ID": 27,
+                "SOURCE_KEY": "cryptopotato",
+                "NAME": "Crypto Potato",
+                "IMAGE_URL": "https://images.cryptocompare.com/news/default/cryptopotato.png",
+                "URL": "https://cryptopotato.com/category/crypto-news/feed/",
+                "LANG": "EN",
+                "SOURCE_TYPE": "RSS",
+                "LAUNCH_DATE": 1458086400,
+                "SORT_ORDER": 0,
+                "BENCHMARK_SCORE": 57,
+                "STATUS": "ACTIVE",
+                "LAST_UPDATED_TS": 1765133049,
+                "CREATED_ON": 1657730129,
+                "UPDATED_ON": 1711621041
+            },
+            "CATEGORY_DATA": [
+                {
+                    "TYPE": "122",
+                    "ID": 5,
+                    "NAME": "ALTCOIN",
+                    "CATEGORY": "ALTCOIN"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 14,
+                    "NAME": "BTC",
+                    "CATEGORY": "BTC"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 37,
+                    "NAME": "MARKET",
+                    "CATEGORY": "MARKET"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 50,
+                    "NAME": "TRADING",
+                    "CATEGORY": "TRADING"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 211,
+                    "NAME": "CRYPTOCURRENCY",
+                    "CATEGORY": "CRYPTOCURRENCY"
+                }
+            ]
+        },
+        {
+            "TYPE": "121",
+            "ID": 55474309,
+            "GUID": "https://en.bitcoinsistemi.com/solana-sol-ecosystem-in-turmoil-two-protocols-collide-solana-foundation-issues-statement/",
+            "PUBLISHED_ON": 1765131789,
+            "PUBLISHED_ON_NS": null,
+            "IMAGE_URL": "https://resources.cryptocompare.com/news/81/55474309.jpeg",
+            "TITLE": "Solana (SOL) Ecosystem in Turmoil: Two Protocols Collide, Solana Foundation Issues Statement",
+            "SUBTITLE": null,
+            "AUTHORS": "Mete Demiralp",
+            "URL": "https://en.bitcoinsistemi.com/solana-sol-ecosystem-in-turmoil-two-protocols-collide-solana-foundation-issues-statement/",
+            "SOURCE_ID": 81,
+            "BODY": "Discussions on the Jupiter Lend vault design, one of the most talked-about topics in the Solana ecosystem, escalated further over the weekend. Kash Dhanda, Jupiter Exchange’s chief operating officer, released a video statement addressing community concerns regarding the protocol’s lending product, acknowledging that claims of “zero risk of contagion” circulating on social media are “not 100% accurate.” Dhanda noted that some previous posts had portrayed Jupiter Lend's vaults as “isolated risk,” with one post even stating that “cross-contamination is completely eliminated.” This post was subsequently deleted by the Jupiter team due to backlash. Dhanda said in his statement: “The post we described as having zero risk of infection was completely inaccurate. We wanted to delete it to prevent further spread, but in hindsight, we should have issued a correction at that time.” The controversy was sparked by Fluid co-founder Samyak Jain’s announcement that Jupiter Lend uses rehypothecation for capital efficiency. This means collateral users deposit into vaults can be reused elsewhere within the protocol, meaning the collateral isn’t completely isolated. According to Jain, Jupiter Lend vaults can still be considered “isolated” because each vault has its own configuration, limit, liquidation threshold, and penalty rate. However, this structure does not prevent collateral reuse due to the shared liquidity layer. Related News: Big Bull Michael Saylor Gave Today's Expected Bitcoin Signal Dhanda also confirmed the use of rehypothecation, saying, “This mechanism is why these collateral generates returns.” However, Dhanda argued that the vaults are still “internally isolated.” Marius Ciubotariu, co-founder of rival Solana lending protocol Kamino, publicly criticized Jupiter Lend's design. Kamino recently blocked Jupiter's financial instrument from accessing Kamino positions. Ciubotariu argued that funds from a user who had pledged SOL collateral were being sent to loop trades and other risky positions, writing: “There's no isolation here, just complete cross-contamination. Contrary to what's advertised.” As the debate escalated, Solana Foundation President Lily Liu called on both sides on social media. Liu demanded that Kamino and Jupiter Lend stop targeting each other. Liu noted that the Solana lending market is approximately $5 billion, while Ethereum has a volume 10 times that, and the traditional financial collateral market is much larger. Liu used the following expressions in his message: “We can target each other, with one-click position-moving discussions, sarcastic remarks, etc., but instead we can focus on capturing share of the cryptocurrency market and traditional finance.” *This is not investment advice. Continue Reading: Solana (SOL) Ecosystem in Turmoil: Two Protocols Collide, Solana Foundation Issues Statement",
+            "KEYWORDS": "News|Solana",
+            "LANG": "EN",
+            "UPVOTES": 0,
+            "DOWNVOTES": 0,
+            "SCORE": 0,
+            "SENTIMENT": "NEGATIVE",
+            "STATUS": "ACTIVE",
+            "CREATED_ON": 1765131844,
+            "UPDATED_ON": 1765131845,
+            "SOURCE_DATA": {
+                "TYPE": "120",
+                "ID": 81,
+                "SOURCE_KEY": "bitcoinsistemi",
+                "NAME": "BitcoinSistemi",
+                "IMAGE_URL": "https://resources.cryptocompare.com/news/81/default.png",
+                "URL": "https://en.bitcoinsistemi.com/feed/",
+                "LANG": "EN",
+                "SOURCE_TYPE": "RSS",
+                "LAUNCH_DATE": null,
+                "SORT_ORDER": 0,
+                "BENCHMARK_SCORE": 0,
+                "STATUS": "ACTIVE",
+                "LAST_UPDATED_TS": 1765133087,
+                "CREATED_ON": 1692873798,
+                "UPDATED_ON": 1764762589
+            },
+            "CATEGORY_DATA": [
+                {
+                    "TYPE": "122",
+                    "ID": 13,
+                    "NAME": "BLOCKCHAIN",
+                    "CATEGORY": "BLOCKCHAIN"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 14,
+                    "NAME": "BTC",
+                    "CATEGORY": "BTC"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 37,
+                    "NAME": "MARKET",
+                    "CATEGORY": "MARKET"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 46,
+                    "NAME": "SOL",
+                    "CATEGORY": "SOL"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 211,
+                    "NAME": "CRYPTOCURRENCY",
+                    "CATEGORY": "CRYPTOCURRENCY"
+                }
+            ]
+        },
+        {
+            "TYPE": "121",
+            "ID": 55474145,
+            "GUID": "https://coinpaper.com/12925/uk-locks-in-ethereum-property-rights-as-futures-bets-rebuild",
+            "PUBLISHED_ON": 1765131476,
+            "PUBLISHED_ON_NS": null,
+            "IMAGE_URL": "https://resources.cryptocompare.com/news/93/default.png",
+            "TITLE": "UK Locks In Ethereum Property Rights as Futures Bets Rebuild",
+            "SUBTITLE": null,
+            "AUTHORS": "",
+            "URL": "https://coinpaper.com/12925/uk-locks-in-ethereum-property-rights-as-futures-bets-rebuild",
+            "SOURCE_ID": 93,
+            "BODY": "Ethereum sits in the spotlight today as the UK writes digital assets like ETH directly into property law while derivatives traders quietly rebuild leverage after October’s wipeout. Together, the legal shift and the rise in open interest show how Ethereum’s role keeps deepening both in traditional courts and on crypto futures markets. UK passes law that directly strengthens ETH property rights Digital assets such as Bitcoin and Ethereum now have explicit recognition as personal property in England, Wales and Northern Ireland after the Property (Digital Assets etc) Act 2025 received Royal Assent and came into force on Dec. 2. The Act states that a “thing,” including something digital or electronic, is not prevented from being the object of personal property rights just because it is neither a “thing in possession” nor a “thing in action,” the two traditional categories in English law. In effect, lawmakers have opened the door for a third category of personal property to cover assets like crypto-tokens and non-fungible tokens. The UK government says the change confirms that digital assets can be recognised as personal property and gives stronger protection to victims of digital theft and fraud, who can now rely on a clearer statutory basis when they go to court.Courts will be able to apply existing property law tools more directly to crypto, including freezing, tracing and recovery of misappropriated coins, and to handle digital asset balances more cleanly in insolvency or exchange failure cases. At the same time, legal analysts say the Act removes uncertainty for banks, custodians and funds that want to hold or use crypto under English-law structures. With digital assets now recognised as objects of property rights in statute, it becomes easier to document security interests and collateral arrangements over ETH and other tokens in secured lending and structured finance transactions. The legislation applies across England, Wales and Northern Ireland and took effect immediately on the day it was passed, following recommendations from the Law Commission’s 2023 digital assets report. ETH open interest climbs again after October crash Meanwhile, Ethereum futures open interest has been rebuilding since the violent wipeout on Oct. 10, leaving derivatives traders more exposed again, according to chart data shared by analyst Ted (@TedPillows). The ETHUSDT perpetual contract on Binance Futures now shows steadily rising positioning even as spot price trades well below its early-autumn levels. Ethereum Futures Open Interest Rebuilds. Source: TedPillows The accompanying chart tracks Ethereum’s daily candles on Binance Futures alongside aggregated open interest in coins from analytics platform Velo. It shows leverage collapsing in mid-October, when open interest dropped sharply, then grinding higher through November and into early December as traders slowly added new positions. Ted said he expects much of this rebuilt open interest to “be wiped out in the coming months,” arguing that market makers may push Ethereum into a choppy trading range to flush out leveraged longs and shorts. In that scenario, open interest could fall again as positions are forced to close, even if spot price does not revisit the October crash levels.",
+            "KEYWORDS": "News|Ethereum",
+            "LANG": "EN",
+            "UPVOTES": 0,
+            "DOWNVOTES": 0,
+            "SCORE": 0,
+            "SENTIMENT": "POSITIVE",
+            "STATUS": "ACTIVE",
+            "CREATED_ON": 1765131515,
+            "UPDATED_ON": null,
+            "SOURCE_DATA": {
+                "TYPE": "120",
+                "ID": 93,
+                "SOURCE_KEY": "coinpaper",
+                "NAME": "Coinpaper",
+                "IMAGE_URL": "https://resources.cryptocompare.com/news/93/default.png",
+                "URL": "https://coinpaper.com/newsfeed",
+                "LANG": "EN",
+                "SOURCE_TYPE": "RSS",
+                "LAUNCH_DATE": 1646092800,
+                "SORT_ORDER": 0,
+                "BENCHMARK_SCORE": 0,
+                "STATUS": "ACTIVE",
+                "LAST_UPDATED_TS": 1765133080,
+                "CREATED_ON": 1709283963,
+                "UPDATED_ON": 1709284009
+            },
+            "CATEGORY_DATA": [
+                {
+                    "TYPE": "122",
+                    "ID": 24,
+                    "NAME": "ETH",
+                    "CATEGORY": "ETH"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 25,
+                    "NAME": "EXCHANGE",
+                    "CATEGORY": "EXCHANGE"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 41,
+                    "NAME": "REGULATION",
+                    "CATEGORY": "REGULATION"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 50,
+                    "NAME": "TRADING",
+                    "CATEGORY": "TRADING"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 211,
+                    "NAME": "CRYPTOCURRENCY",
+                    "CATEGORY": "CRYPTOCURRENCY"
+                }
+            ]
+        },
+        {
+            "TYPE": "121",
+            "ID": 55474314,
+            "GUID": "https://en.coinotag.com/wisdomtree-launches-epxc-tokenized-fund-potentially-bridging-options-strategies-with-blockchain",
+            "PUBLISHED_ON": 1765130769,
+            "PUBLISHED_ON_NS": null,
+            "IMAGE_URL": "https://resources.cryptocompare.com/news/77/55474314.jpeg",
+            "TITLE": "WisdomTree Launches EPXC Tokenized Fund, Potentially Bridging Options Strategies with Blockchain",
+            "SUBTITLE": null,
+            "AUTHORS": "COINOTAG Editorial Team",
+            "URL": "https://en.coinotag.com/wisdomtree-launches-epxc-tokenized-fund-potentially-bridging-options-strategies-with-blockchain",
+            "SOURCE_ID": 77,
+            "BODY": "WisdomTree's EPXC fund tokenizes a cash-secured put-writing strategy on the Volos US Large Cap Target 2.5% PutWrite Index, blending traditional options trading with blockchain for enhanced income generation and accessibility. This launch highlights the deepening integration of legacy finance and digital assets, offering investors premium income from selling put options on SPY-linked contracts. EPXC tracks [...]",
+            "KEYWORDS": "News",
+            "LANG": "EN",
+            "UPVOTES": 0,
+            "DOWNVOTES": 0,
+            "SCORE": 0,
+            "SENTIMENT": "POSITIVE",
+            "STATUS": "ACTIVE",
+            "CREATED_ON": 1765131850,
+            "UPDATED_ON": 1765131851,
+            "SOURCE_DATA": {
+                "TYPE": "120",
+                "ID": 77,
+                "SOURCE_KEY": "coinotag",
+                "NAME": "CoinOtag",
+                "IMAGE_URL": "https://resources.cryptocompare.com/news/77/default.png",
+                "URL": "https://en.coinotag.com/feed/",
+                "LANG": "EN",
+                "SOURCE_TYPE": "RSS",
+                "LAUNCH_DATE": null,
+                "SORT_ORDER": 0,
+                "BENCHMARK_SCORE": 0,
+                "STATUS": "ACTIVE",
+                "LAST_UPDATED_TS": 1765133091,
+                "CREATED_ON": 1686819961,
+                "UPDATED_ON": 1717748924
+            },
+            "CATEGORY_DATA": [
+                {
+                    "TYPE": "122",
+                    "ID": 13,
+                    "NAME": "BLOCKCHAIN",
+                    "CATEGORY": "BLOCKCHAIN"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 15,
+                    "NAME": "BUSINESS",
+                    "CATEGORY": "BUSINESS"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 37,
+                    "NAME": "MARKET",
+                    "CATEGORY": "MARKET"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 50,
+                    "NAME": "TRADING",
+                    "CATEGORY": "TRADING"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 211,
+                    "NAME": "CRYPTOCURRENCY",
+                    "CATEGORY": "CRYPTOCURRENCY"
+                }
+            ]
+        },
+        {
+            "TYPE": "121",
+            "ID": 55473824,
+            "GUID": "https://timestabloid.com/?p=91665",
+            "PUBLISHED_ON": 1765130746,
+            "PUBLISHED_ON_NS": null,
+            "IMAGE_URL": "https://resources.cryptocompare.com/news/67/default.png",
+            "TITLE": "Pundit: Something Is Off in the XRP Charts and Timing",
+            "SUBTITLE": null,
+            "AUTHORS": "Zaccheaus Ogunjobi",
+            "URL": "https://timestabloid.com/pundit-something-is-off-in-the-xrp-charts-and-timing/",
+            "SOURCE_ID": 67,
+            "BODY": "XRP’s price action has entered an unusual phase. The asset has remained locked between $2.02 and $2.04 for almost two days. The movement looks less like a normal weekend slowdown and more like a system holding its breath. Order books across major exchanges appear thin, volume remains low, and several chart intervals on Coinbase have shown temporary failures. These details suggest structural tension building below the surface. According to analyst SonOfaRichard, the current behavior is not typical retail-driven stagnation. He argues that the order flow resembles a liquidity engine absorbing activity rather than a public market searching for direction. The price does not drift as it usually would under retail conditions. Instead, it pins tightly, while user interfaces show stress before any price movement occurs. This pattern is rare and usually appears when deeper architecture prepares for a shift. Something is off in the charts — and the timing is almost too defined. XRP has been pinned between $2.02–$2.04 for almost 48 hours straight. Weekend. Low volume. Bid/ask depth evaporated. Multiple interval failures on Coinbase — 1D, 4H, 1H, 15m — UI breaking before price.… https://t.co/U69MXeaoRI — SonOfaRichard (@heythereRich) December 7, 2025 Bitnomial’s Launch and the Timing Question The timing has raised eyebrows because Bitnomial is set to launch a full suite of XRP markets on Monday. The exchange is the first in the United States to offer crypto-settled futures, perpetuals, options, and spot products under full CFTC oversight. It also lists XRP and RLUSD as acceptable margin assets. Bitnomial previously challenged the SEC’s stance on XRP and has maintained a partnership with Ripple. Its arrival marks a major regulatory milestone for XRP within the U.S. derivatives ecosystem. Structural Shifts in Clearing and Settlement The launch aligns with recent updates from the DTCC. These updates refine classifications related to digital-asset settlement procedures. The DTCC does not influence day-to-day market action. Instead, it defines the rules that govern settlement, clearing, and collateral movement. Adjustments of this type often precede changes in how institutional markets interact with specific assets. Ripple’s Regulatory Integration Expands Ripple’s Major Payment Institution licence adds another important layer. The licence grants Ripple the authority to engage directly with banking systems. This permission allows Ripple to handle settlement, custody, and value transfer without intermediaries. When XRP and RLUSD sit inside approved banking workflows, they gain new utility for institutions seeking compliant settlement assets. We are on X, follow us to connect with us :- @TimesTabloid1 — TimesTabloid (@TimesTabloid1) June 15, 2025 Convergence of Market and Infrastructure The simultaneous arrival of Bitnomial’s launch, the DTCC’s updates, and Ripple’s licensing progress creates a rare alignment. Each development moves XRP deeper into regulated settlement frameworks. When these frameworks tighten around an asset, the market often stops behaving like a simple order book. It begins to behave like infrastructure ready for increased throughput. What the Compression Could Signal Price compression of this type often precedes decisive movement. Similar patterns have appeared in commodities and foreign exchange. Liquidity thins, depth weakens, user interfaces strain, and then a release occurs. The market shifts from one price shelf to another with notable speed. These events do not guarantee direction. They simply indicate tension in the system. Outlook for the Coming Week XRP’s frozen range reflects more than weekend quiet. It shows a market preparing for structural change. With new derivatives, updated settlement rules, and expanded regulatory pathways converging at once, next week could deliver significant movement. The mechanics hint at pressure building beneath the charts, and that pressure rarely stays contained for long. Disclaimer : This content is meant to inform and should not be considered financial advice. The views expressed in this article may include the author’s personal opinions and do not represent Times Tabloid’s opinion. Readers are urged to do in-depth research before making any investment decisions. Any action taken by the reader is strictly at their own risk. Times Tabloid is not responsible for any financial losses. Follow us on Twitter , Facebook , Telegram , and Google News The post Pundit: Something Is Off in the XRP Charts and Timing appeared first on Times Tabloid .",
+            "KEYWORDS": "Cryptocurrency|News|XRP|XRP Price",
+            "LANG": "EN",
+            "UPVOTES": 0,
+            "DOWNVOTES": 0,
+            "SCORE": 0,
+            "SENTIMENT": "NEUTRAL",
+            "STATUS": "ACTIVE",
+            "CREATED_ON": 1765130823,
+            "UPDATED_ON": null,
+            "SOURCE_DATA": {
+                "TYPE": "120",
+                "ID": 67,
+                "SOURCE_KEY": "timestabloid",
+                "NAME": "TimesTabloid",
+                "IMAGE_URL": "https://resources.cryptocompare.com/news/67/default.png",
+                "URL": "https://timestabloid.com/feed/",
+                "LANG": "EN",
+                "SOURCE_TYPE": "RSS",
+                "LAUNCH_DATE": null,
+                "SORT_ORDER": 0,
+                "BENCHMARK_SCORE": 0,
+                "STATUS": "ACTIVE",
+                "LAST_UPDATED_TS": 1765133083,
+                "CREATED_ON": 1664381507,
+                "UPDATED_ON": 1673235440
+            },
+            "CATEGORY_DATA": [
+                {
+                    "TYPE": "122",
+                    "ID": 25,
+                    "NAME": "EXCHANGE",
+                    "CATEGORY": "EXCHANGE"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 37,
+                    "NAME": "MARKET",
+                    "CATEGORY": "MARKET"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 50,
+                    "NAME": "TRADING",
+                    "CATEGORY": "TRADING"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 58,
+                    "NAME": "XRP",
+                    "CATEGORY": "XRP"
+                },
+                {
+                    "TYPE": "122",
+                    "ID": 211,
+                    "NAME": "CRYPTOCURRENCY",
+                    "CATEGORY": "CRYPTOCURRENCY"
+                }
+            ]
+        }
+    ],
+    "Err": {}
+}

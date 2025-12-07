@@ -15,18 +15,21 @@ export interface Database {
                     email: string
                     created_at: string
                     role: 'user' | 'admin'
+                    subscription_status: 'free' | 'paid'
                 }
                 Insert: {
                     id: string
                     email: string
                     created_at?: string
                     role?: 'user' | 'admin'
+                    subscription_status?: 'free' | 'paid'
                 }
                 Update: {
                     id?: string
                     email?: string
                     created_at?: string
                     role?: 'user' | 'admin'
+                    subscription_status?: 'free' | 'paid'
                 }
             }
             news_sources: {
@@ -64,6 +67,9 @@ export interface Database {
                     url: string
                     published_at: string
                     created_at: string
+                    guid?: string | null
+                    sentiment?: Json | null
+                    category_data?: Json | null
                 }
                 Insert: {
                     id?: string
@@ -73,6 +79,9 @@ export interface Database {
                     url: string
                     published_at: string
                     created_at?: string
+                    guid?: string | null
+                    sentiment?: Json | null
+                    category_data?: Json | null
                 }
                 Update: {
                     id?: string
@@ -82,6 +91,9 @@ export interface Database {
                     url?: string
                     published_at?: string
                     created_at?: string
+                    guid?: string | null
+                    sentiment?: Json | null
+                    category_data?: Json | null
                 }
             }
             summaries: {

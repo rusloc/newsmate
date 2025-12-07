@@ -1,0 +1,308 @@
+import React, { useState, useRef } from 'react';
+import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
+import { Sparkles, FileText, X, ChevronDown, Share2, Heart, MessageCircle } from 'lucide-react';
+
+// --- Mock Data ---
+const NEWS_ITEMS = [
+  {
+    id: 1,
+    category: "TECHNOLOGY",
+    headline: "Quantum Computing Breakthrough Achieved by Major Tech Giant",
+    summary: "Scientists have successfully stabilized quantum bits at room temperature for the first time, marking a historic leap towards consumer quantum processors.",
+    fullText: "In a groundbreaking development, researchers have managed to sustain quantum superposition at room temperature for over 10 milliseconds. This defies previous limitations where near-absolute zero temperatures were required. This breakthrough could accelerate the development of quantum computers by decades, making them viable for drug discovery, complex climate modeling, and financial optimization much sooner than anticipated.",
+    aiSummary: [
+      "Room temperature qubits stabilized.",
+      "10ms coherence time achieved.",
+      "Removes need for liquid helium cooling.",
+      "Accelerates commercial viability."
+    ],
+    color: "from-blue-500 to-cyan-400"
+  },
+  {
+    id: 2,
+    category: "SPACE",
+    headline: "Mars Colony Architecture Finalized for 2035 Mission",
+    summary: "The International Space Agency has released the final blueprints for the first permanent habitat on Mars, utilizing local regolith 3D printing.",
+    fullText: "The 'Ares Base' project will rely on autonomous rovers sent two years prior to human arrival. These rovers will sinter Martian soil (regolith) into protective shells against radiation. The habitats are designed to be modular, expanding like a honeycomb as the colony grows. Life support systems will recycle 98% of water and air, creating a closed-loop ecosystem essential for long-term survival.",
+    aiSummary: [
+      "3D printed using Martian soil.",
+      "Autonomous construction before humans arrive.",
+      "Honeycomb modular expansion.",
+      "98% resource recycling rate."
+    ],
+    color: "from-orange-500 to-red-400"
+  },
+  {
+    id: 3,
+    category: "FINANCE",
+    headline: "Global Markets Shift as Crypto Regulations Standardize",
+    summary: "Major economic powers have agreed on a unified framework for digital assets, causing an immediate stabilization in cryptocurrency volatility.",
+    fullText: "After years of fragmented policies, the G20 nations have signed the 'Digital Asset Accord'. This framework ensures banking-grade security standards for exchanges while preserving the innovation of DeFi protocols. Markets responded positively, with institutional investment flowing into the sector at record rates, signaling the end of the 'Wild West' era of crypto.",
+    aiSummary: [
+      "G20 signs 'Digital Asset Accord'.",
+      "Unified global regulations.",
+      "Institutional investment spikes.",
+      "Volatility decreases significantly."
+    ],
+    color: "from-emerald-500 to-green-400"
+  },
+  {
+    id: 4,
+    category: "HEALTH",
+    headline: "Synthetic Bio-Organs Pass Final Phase III Trials",
+    summary: "Lab-grown kidneys and livers have shown 100% acceptance rates in patients, potentially ending the organ donor waiting list crisis forever.",
+    fullText: "The new bio-printing technique uses the patient's own stem cells, effectively eliminating the risk of rejection. The organs are printed on a biodegradable scaffold that dissolves as the tissue matures. With Phase III trials concluding successfully, FDA approval is expected within months. This technology promises to save thousands of lives annually.",
+    aiSummary: [
+      "Uses patient's own stem cells.",
+      "Zero rejection rate observed.",
+      "Ends donor waiting lists.",
+      "FDA approval imminent."
+    ],
+    color: "from-purple-500 to-pink-400"
+  },
+  {
+    id: 5,
+    category: "ENVIRONMENT",
+    headline: "Ocean Cleanup Project Declares Great Pacific Garbage Patch Reduced by 50%",
+    summary: "Autonomous floating barriers have successfully removed half of the floating plastic debris in the Pacific, exceeding 10-year targets in just 4 years.",
+    fullText: "System 003, a massive U-shaped floating barrier, has been sweeping the ocean surface with unprecedented efficiency. Coupled with AI-driven navigation that predicts plastic hotspots based on currents, the cleanup effort has accelerated. The recovered plastic is being recycled into durable consumer goods, funding the continuation of the project.",
+    aiSummary: [
+      "50% reduction in 4 years.",
+      "AI-driven navigation.",
+      "Plastic recycled into products.",
+      "Project is now self-funding."
+    ],
+    color: "from-teal-400 to-cyan-300"
+  }
+];
+
+const Card = ({ item, scrollYProgress, index, total }) => {
+  const [activeTab, setActiveTab] = useState(null); // 'ai', 'news', or null
+
+  // --- Cylinder Effect Logic ---
+  // We map the global scroll progress to a local rotation for this specific card
+  // A generic approximation to make items rotate as they traverse the viewport
+  const cardStart = index / total;
+  const cardEnd = (index + 1) / total;
+  
+  // Create a transform that rotates X based on where the card is in the scroll view
+  // We adjust the range so items "tilt" away at top and bottom
+  const rotateX = useTransform(
+    scrollYProgress,
+    [Math.max(0, cardStart - 0.2), (cardStart + cardEnd) / 2, Math.min(1, cardEnd + 0.2)],
+    [35, 0, -35] // Rotate from 35deg to -35deg
+  );
+
+  const scale = useTransform(
+    scrollYProgress,
+    [Math.max(0, cardStart - 0.2), (cardStart + cardEnd) / 2, Math.min(1, cardEnd + 0.2)],
+    [0.85, 1, 0.85]
+  );
+
+  const opacity = useTransform(
+    scrollYProgress,
+    [Math.max(0, cardStart - 0.3), (cardStart + cardEnd) / 2, Math.min(1, cardEnd + 0.3)],
+    [0.3, 1, 0.3]
+  );
+  
+  const yOffset = useTransform(
+     scrollYProgress,
+     [Math.max(0, cardStart - 0.2), Math.min(1, cardEnd + 0.2)],
+     [50, -50]
+  );
+
+
+  const toggleTab = (tab) => {
+    setActiveTab(activeTab === tab ? null : tab);
+  };
+
+  return (
+    <motion.div 
+      className="sticky top-0 h-screen w-full flex items-center justify-center perspective-1000"
+      style={{ 
+        perspective: "1200px",
+        zIndex: index 
+      }}
+    >
+      <motion.div
+        style={{
+          rotateX,
+          scale,
+          opacity,
+          y: yOffset,
+          transformStyle: "preserve-3d"
+        }}
+        className="relative w-[90%] md:w-[45%] aspect-square max-w-md max-h-[600px] group"
+      >
+        {/* --- Main Card Content --- */}
+        <div className="absolute inset-0 bg-white dark:bg-zinc-900 rounded-3xl shadow-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden flex flex-col z-20 transition-colors duration-300">
+          
+          {/* Header (Top 20%) */}
+          <div className={`h-[25%] p-6 relative overflow-hidden bg-gradient-to-br ${item.color}`}>
+             <div className="absolute top-4 left-6 text-xs font-bold tracking-widest text-white/80 uppercase">
+               {item.category}
+             </div>
+             <h2 className="mt-6 text-xl md:text-2xl font-bold leading-tight text-white drop-shadow-sm">
+               {item.headline}
+             </h2>
+          </div>
+
+          {/* Body (Bottom 80%) */}
+          <div className="h-[75%] p-6 flex flex-col justify-between bg-white dark:bg-zinc-900">
+            <p className="text-zinc-600 dark:text-zinc-300 text-lg leading-relaxed font-serif">
+              {item.summary}
+            </p>
+            
+            {/* Social Proof / Footer area (Instagram-like touch) */}
+            <div className="mt-4 pt-4 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between text-zinc-400">
+               <div className="flex gap-4">
+                 <Heart className="w-6 h-6 hover:text-red-500 cursor-pointer transition-colors" />
+                 <MessageCircle className="w-6 h-6 hover:text-blue-500 cursor-pointer transition-colors" />
+                 <Share2 className="w-6 h-6 hover:text-green-500 cursor-pointer transition-colors" />
+               </div>
+               <span className="text-xs font-mono">2m ago</span>
+            </div>
+          </div>
+        </div>
+
+        {/* --- Side Tabs --- */}
+        {/* AI Tab Button */}
+        <button
+          onClick={() => toggleTab('ai')}
+          className={`absolute right-[-45px] top-[15%] w-14 h-32 rounded-r-2xl shadow-lg z-10 flex flex-col items-center justify-center gap-2 transition-all duration-300 ${activeTab === 'ai' ? 'bg-purple-600 text-white translate-x-1' : 'bg-white dark:bg-zinc-800 text-purple-600 hover:bg-purple-50 translate-x-0'}`}
+          aria-label="AI Summary"
+        >
+          <Sparkles className="w-6 h-6" />
+          <span className="text-xs font-bold writing-vertical rotate-180" style={{ writingMode: 'vertical-rl' }}>AI SUM</span>
+        </button>
+
+        {/* News Tab Button */}
+        <button
+          onClick={() => toggleTab('news')}
+          className={`absolute right-[-45px] top-[50%] w-14 h-32 rounded-r-2xl shadow-lg z-10 flex flex-col items-center justify-center gap-2 transition-all duration-300 ${activeTab === 'news' ? 'bg-zinc-900 dark:bg-zinc-100 dark:text-zinc-900 text-white translate-x-1' : 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-200 hover:bg-zinc-50 translate-x-0'}`}
+          aria-label="Full News"
+        >
+          <FileText className="w-6 h-6" />
+          <span className="text-xs font-bold writing-vertical rotate-180" style={{ writingMode: 'vertical-rl' }}>FULL</span>
+        </button>
+
+
+        {/* --- Slide-out Panels --- */}
+        <AnimatePresence>
+          {activeTab && (
+            <motion.div
+              initial={{ x: "0%", opacity: 0 }}
+              animate={{ x: "105%", opacity: 1 }}
+              exit={{ x: "0%", opacity: 0 }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+              className="absolute inset-y-0 left-0 w-full rounded-3xl z-10 shadow-2xl overflow-hidden pointer-events-auto"
+            >
+              <div className="h-full w-full bg-zinc-50 dark:bg-zinc-800 p-6 flex flex-col relative border border-zinc-200 dark:border-zinc-700">
+                <button 
+                  onClick={() => setActiveTab(null)}
+                  className="absolute top-4 right-4 p-2 bg-zinc-200 dark:bg-zinc-700 rounded-full hover:bg-zinc-300 transition-colors"
+                >
+                  <X className="w-4 h-4 text-zinc-600 dark:text-zinc-300" />
+                </button>
+
+                {activeTab === 'ai' && (
+                  <>
+                    <div className="flex items-center gap-2 mb-6 text-purple-600 dark:text-purple-400">
+                      <Sparkles className="w-5 h-5" />
+                      <h3 className="font-bold uppercase tracking-wider text-sm">AI Breakdown</h3>
+                    </div>
+                    <ul className="space-y-4">
+                      {item.aiSummary.map((point, i) => (
+                        <li key={i} className="flex gap-3 text-zinc-700 dark:text-zinc-300 text-sm leading-relaxed bg-white dark:bg-zinc-900/50 p-3 rounded-lg shadow-sm">
+                          <span className="block w-1.5 h-1.5 mt-2 rounded-full bg-purple-500 shrink-0" />
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="mt-auto p-3 bg-purple-100 dark:bg-purple-900/20 rounded-lg">
+                      <p className="text-xs text-purple-700 dark:text-purple-300 text-center">
+                        Generated by Neural Engine v4.2
+                      </p>
+                    </div>
+                  </>
+                )}
+
+                {activeTab === 'news' && (
+                  <>
+                     <div className="flex items-center gap-2 mb-6 text-zinc-900 dark:text-zinc-100">
+                      <FileText className="w-5 h-5" />
+                      <h3 className="font-bold uppercase tracking-wider text-sm">Full Story</h3>
+                    </div>
+                    <div className="flex-1 overflow-y-auto pr-2 custom-scrollbar">
+                      <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed text-sm whitespace-pre-wrap">
+                        {item.fullText}
+                      </p>
+                    </div>
+                  </>
+                )}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+      </motion.div>
+    </motion.div>
+  );
+};
+
+export default function App() {
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"]
+  });
+
+  return (
+    <div ref={containerRef} className="bg-zinc-100 dark:bg-zinc-950 min-h-[300vh] relative font-sans selection:bg-purple-200 dark:selection:bg-purple-900">
+      
+      {/* Navbar mock */}
+      <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 px-6 py-4 flex justify-between items-center">
+        <div className="font-bold text-xl tracking-tighter italic">CYLINDER.</div>
+        <div className="w-8 h-8 bg-zinc-200 dark:bg-zinc-800 rounded-full" />
+      </nav>
+
+      {/* Top Blur Overlay (Cylinder effect) */}
+      <div className="fixed top-0 left-0 w-full h-32 bg-gradient-to-b from-zinc-100 via-zinc-100/80 to-transparent dark:from-zinc-950 dark:via-zinc-950/80 z-40 pointer-events-none" />
+
+      {/* Main Content Area */}
+      <div className="relative pt-[10vh] pb-[10vh]">
+        {NEWS_ITEMS.map((item, index) => (
+          <Card 
+            key={item.id} 
+            item={item} 
+            index={index} 
+            total={NEWS_ITEMS.length} 
+            scrollYProgress={scrollYProgress}
+          />
+        ))}
+      </div>
+
+      {/* Bottom Blur Overlay (Cylinder effect) */}
+      <div className="fixed bottom-0 left-0 w-full h-32 bg-gradient-to-t from-zinc-100 via-zinc-100/80 to-transparent dark:from-zinc-950 dark:via-zinc-950/80 z-40 pointer-events-none" />
+      
+      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-zinc-400 z-40 animate-bounce">
+         <span className="text-xs uppercase tracking-widest">Scroll</span>
+         <ChevronDown className="w-4 h-4" />
+      </div>
+
+      {/* Global Styles for Scrollbar hiding inside cards if needed */}
+      <style jsx global>{`
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background-color: rgba(156, 163, 175, 0.5);
+          border-radius: 20px;
+        }
+      `}</style>
+    </div>
+  );
+}
