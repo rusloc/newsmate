@@ -73,7 +73,7 @@ export async function fetchAndProcessCoinDeskNews() {
                 .from('news_sources')
                 .select('id')
                 .eq('name', 'CoinDesk')
-                .single()
+                .maybeSingle()
 
             if (source) {
                 sourceId = source.id
