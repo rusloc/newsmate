@@ -1,20 +1,12 @@
-import { createClient } from '@/lib/supabase'
+import { createClient } from '@supabase/supabase-js'
+import { Database } from '@/types/database'
 
-const COINDESK_API_URL = 'https://developers.coindesk.com/documentation/data-api/news_v1_article_list' // Placeholder, user provided documentation link, assuming actual endpoint is needed.
-// Looking at the user request, they provided a link to documentation.
-// Usually CoinDesk API is something like https://api.coindesk.com/v1/news/list or similar.
-// However, the user provided a specific URL. I will use a placeholder and ask user or search if I can.
-// Wait, the user said "Main API to gather news ... https://developers.coindesk.com/documentation/data-api/news_v1_article_list".
-// That looks like a doc link. I should probably search for the actual endpoint or assume a standard one.
-// Let's assume the user wants me to use the logic described there.
-// Actually, I'll use a generic fetcher and let the user correct the URL if needed, or I can try to find the real one.
-// A common CoinDesk endpoint is `https://data-api.coindesk.com/news/v1/article/list`.
-
-const ACTUAL_API_URL = 'https://data-api.coindesk.com/news/v1/article/list' // Best guess based on doc name
+const COINDESK_API_URL = 'https://developers.coindesk.com/documentation/data-api/news_v1_article_list'
+const ACTUAL_API_URL = 'https://data-api.coindesk.com/news/v1/article/list'
 
 interface CoinDeskItem {
     TITLE: string
-    PUBLISHED_ON: string // Unix timestamp or ISO string? Docs usually say. Assuming ISO or similar.
+    PUBLISHED_ON: string
     URL: string
     BODY: string
     SENTIMENT: any
@@ -25,11 +17,14 @@ interface CoinDeskItem {
 
 interface CoinDeskResponse {
     Data: CoinDeskItem[]
-    // Add other fields if known
 }
 
 export async function fetchAndProcessCoinDeskNews() {
-    const supabase = createClient()
+    // Use Service Role Key for backend processing to bypass RLS
+    const supabase = createClient<Database>(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.SUPABASE_SERVICE_ROLE_KEY!
+    )
 
     // 1. Fetch from CoinDesk
     console.log('Fetching from CoinDesk...')
